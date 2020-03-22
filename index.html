@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+    <link rel="stylesheet" href="/src/css/main.css">
+    <title>Euco | Europejskie Centrum Odszkodowań </title>
+    <meta name="description" content="Jesteśmy doświadczonymi doradcami EUCO!">
+</head>
+<body>
+    <main class="wraper">
+        <!-- HERO Section -->
+        <div class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <img class="logo" src="/src/img/logo.png" alt="">
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                       <div class="content">
+                           <h1>Jesteśmy <b>doświadczonymi</b> doradcami EUCO!</h1>
+                           <div class="contact">
+                               <div>
+                                   <img src="src/img/phone.png" alt="">
+                               </div>
+                               <div>
+                                   <h2><b>Miałeś wypadek?</b> Masz pytania ?</h2>
+                                   <a href="tel:790 206 603">790 206 603 </a> <a href="tel:507 727 486">507 727 486</a>
+                               </div>
+                           </div>
+                           <ul>
+                               <li>Jesteś osobą niepełnosprawną? Sprawdź czy <b> należy Ci się renta.</b></li>
+                               <li>Twoja <b> renta jest zbyt niska?</b> Sprawdź możliwość jej zwiększenia.</li>
+                               <li>Pobierasz rentę wypadkową? Sprawdź  <b>możliwość jej kapitalizacji.</b></li>
+                           </ul>
+                       </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="form">
+                           <div class="head">
+                                <h3>WYPEŁNIJ FORMULARZ</h3>
+                                <p>Oddzwonimy do Ciebie w ciągu <b>24 godzin!</b></p>
+                            </div>
+                            <div class="subhead">
+                                <h4>BEZPŁATNA WERYFIKACJA KAŻDEJ SPRAWY !</h4>
+                            </div>
+                            <form name="contactForm" action="target.php" method="post" onsubmit="return validateForm()">
+                                <div class="input-group">
+                                    <span class="ic person"></span>
+                                    <div>
+                                        <input type="text" id="fName" name="fName" placeholder="Imię">
+                                    </div>
+                                    <span class="error" id="nameErr"></span>
+                                </div>
+                                <div class="input-group">
+                                    <span class="ic person"></span>
+                                    <div>
+                                        <input type="text" id="fSurname" name="fSurname" placeholder="Nazwisko">
+                                    </div>
+                                    <span class="error" id="surErr"></span>
+                                </div>
+                                <div class="input-group">
+                                    <span class="ic email"></span>
+                                    <div>
+                                       <input id="fEmail" name="fEmail" type="text" placeholder="Adres email">      
+                                    </div>
+                                    <span class="error" id="emailErr"></span>
+                                </div>
+                                <div class="input-group">
+                                    <span class="ic phone"></span>
+                                    <div>
+                                        <input id="fPhone" type="text" name="fPhone" placeholder="Numer telefonu">
+                                    </div>
+                                    <span class="error" id="phoneErr"></span>
+                                </div>
+                                <div class="check input-group">
+                                    <label for="zgodaDane">
+                                        <input name="zgodaDane" id="zgodaDane" type="checkbox" class="zgoda" value="Zaakceptowana zgoda o przetwarzanie Danych osobowych" />
+                                        <span id="zgodaWiecej">
+                                            Wyrażam zgodę na przetwarzanie podanych w formularzu 
+                                            danych osobowych do celów korespondencyjnych 
+                                            i udzielenia mi odpowiedzi na zadane pytania.
+                                        </span>
+                                    <span class="error" id="zgodaDaneErr"></span>
+                                    </label>
+                                  
+                                </div>
+                                <div class="input-group">
+                                    
+                                    <button type="submit" id="submit" class="btn"  >WYŚLIJ WIADOMOŚĆ <img src="src/img/arrow-btn.png" alt=""></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END HERO Section -->
+
+        <!-- Co to jest Renta -->
+        <div class="co-to-renta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-md-7">
+                        <div class="content">
+                            <h2 class="title-sec">Co to jest renta?</h2>
+                            <p>Renta to świadczenie <b>okresowe lub dożywotnie</b>, mające na celu niwelować negatywne konsekwencje wypadku, które mogą pojawić się w przyszłości. Roszczenie o rentę przysługuje poszkodowanemu, jeżeli:</p>
+                            <ul>
+                                <li> całkowicie lub częściowo <b> utracił on zdolność do pracy zarobkowej</b></li>
+                                <li> <b>zmalały jego szanse</b> na osiągnięcie sukcesu w przyszłości</li>
+                                <li> <b>zwiększyły się</b> jego potrzeby</li>
+                            </ul>
+                            <p>Czy wszyscy wiedzą kto jest odpowiedzialny za przyznanie i wypłatę renty? Zazwyczaj pierwsze skojarzenie to ZUS. Oczywiście jest to słuszny kierunek. Ale czy jedyny? Otóż nie.</p>
+                            <p><b>Oprócz renty z ZUS należy nam się renta z Polisy OC, która jest wypłacana przez Towarzystwo Ubezpieczeń sprawcy wypadku.</b></p>
+                            <a href="#" class="btn">Sprawdź czy należy ci się renta <img src="src/img/arrow-btn.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END Co to jest Renta -->
+
+        <!-- Kapitalizacja Renty -->
+        <div class="kapitalizacja">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-4"></div>
+                    <div class="col-xs-12 col-sm-8 col-md-8">
+                        <div class="content">
+                            <h2 class="title-sec">Kapitalizacja renty</h2>
+                            <p><b> Kapitalizacja renty polega na zamianie przyszłych cyklicznych świadczeń rentowych na jednorazowe odszkodowanie.</b> Od razu otrzymujesz zatem określoną sumę pieniężną, w zamian za co zrzekasz się roszczeń o wypłatę renty w przyszłości. Podstawą prawną do kapitalizacji renty jest przepis art. 447 k.c. Kapitalizacja następuje najczęściej w formie ugody między poszkodowanym a towarzystwem ubezpieczeniowym</p>
+                            <p>Zastanawiasz się, czy kapitalizacja renty to dobre rozwiązanie? Oczywiście nie jest to łatwa decyzja i zdecydowanie warto się nad nią zastanowić. Z jednej strony dostajesz duży zastrzyk gotówki z drugiej zrzekasz się prawa do przyszłej renty.</p>
+                            <p>Jeżeli zdecydujesz się na kapitalizację, część środków dobrze jest zainwestować, m.in. na zakup mieszkania lub założenie własnej firmy.  Po czasie może okazać się, że dobrze zagospodarowane pieniądze przyniosą bardzo dużo korzyści.</p>
+                            <p>Za takim rozwiązaniem przemawia dodatkowo fakt, że renta nie jest dożywotnia i może się okazać, że po jakimś czasie jej wypłata będzie cofnięta. Jeszcze jedno – taka renta nie jest dziedziczona, więc jeżeli coś Ci się stanie, renta nie będzie dalej wypłacana Twoim spadkobiercom.</p>
+                            <a href="#" class="btn">SPRAWDŹ MOŻLIWOŚĆ KAPITALIZACJI RENTY <img src="src/img/arrow-btn.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END Kapitalizacja Renty -->
+
+        <!-- Waloryzacja -->
+        <div class="waloryzacja">
+            <div class="container">
+                <div class="row bottom-sm">
+                    <div class="col-xs-12 col-sm-7 col-md-8">
+                        <div class="content">
+                            <h2 class="title-sec">Waloryzacja</h2>
+                            <p><b>Pisząc na temat renty warto wspomnieć o pojęciu waloryzacji renty, do której ma prawo każdy poszkodowany pobierający rentę.</b></p>
+                            <p>W związku z rosnącymi cenami usług, specjalistycznej żywności, leków czy wizyt lekarskich, poszkodowani otrzymujący już świadczenie rentowe, mogą żądać jego podwyższenia do aktualnie obowiązujących warunków. </p>
+                            <p>Potwierdzenie stanowi Decyzja Sądu Najwyższego z dnia 05 listopada 1987 roku w sprawie o sygn. akt. III CZP 63/87, w której jest mowa o prawie do zmiany wysokości renty. Każda renta powypadkowa, która została zwaloryzowana może zostać wyrównana do trzech lat wstecz.</p>
+                            <a href="#" class="btn">SPRAWDŹ MOŻLIWOŚĆ WALORYZACJI RENTY <img src="src/img/arrow-btn.png" alt=""></a>
+                            <hr>
+                            <small><b>Europejskie Centrum Odszkodowań SA,</b> <br>ul. św. M. Kolbe 18, 59-220 Legnic</small>
+                        </div>
+                    </div>
+                    <div class="col-xs-12  col-sm-5 col-md-4">
+                        <div class="content-contact">
+                            <h2>Kontakt</h2>
+                            <p>Chcesz wiedzieć więcej? <br><b>Zadzwoń lub napisz.</b> </p>
+                            <div class="con con1">
+                                <img src="src/img/phone-w.png" alt="">
+                                <div>
+                                    <a href="tel:790 206 603">790 206 603</a>
+                                    <a href="tel:507 727 486">507 727 486</a>
+                                </div>
+                            </div>
+                            <div class="con con2">
+                                <img src="src/img/phone-w.png" alt="">
+                                <a href="mailto:biuro@kapitalizacja-renty.pl">biuro@kapitalizacja-renty.pl</a>
+                            </div>
+                            <hr>
+                            <small>Projekt i wykonanie: <b> Agencja Interaktywna Roial.pl</b></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END Waloryzacja -->
+    </main>
+    <script src="src/js/main.js"></script>
+</body>
+</html>
