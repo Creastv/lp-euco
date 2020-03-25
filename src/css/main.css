@@ -131,8 +131,7 @@ b {
 }
 
 .hero .logo {
-  padding-top: 40px;
-  padding-bottom: 65px;
+  margin-left: -60px;
 }
 
 .hero h1 {
@@ -471,19 +470,19 @@ b {
 
 @media only screen and (max-width: 1200px) {
   .kapitalizacja {
-    background-position: 23% center;
+    background-position: 39% center;
   }
 }
 
 @media only screen and (max-width: 992px) {
   .kapitalizacja {
-    background-position: 23% center;
+    background-position: 35% center;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .kapitalizacja {
-    background-position: 14% center;
+    background-position: 27% center;
   }
 }
 

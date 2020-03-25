@@ -11,8 +11,9 @@
         background-size: initial;
     }
     .logo{
-        padding-top: 40px;
-        padding-bottom: 65px;
+        // padding-top: 40px;
+        // padding-bottom: 65px;
+        margin-left: -60px;
     }
     h1{
         font-size: 24px;
@@ -266,13 +267,13 @@
     background-position: center ;
     padding: 60px 0;
     @media #{$md} {
-        background-position: 23% center;
+        background-position: 39% center;
     }
     @media #{$sm} {
-        background-position: 23% center;
+        background-position: 35% center;
     }
     @media #{$xs} {
-        background-position: 14% center;
+        background-position: 27% center;
     }
     .content{
         .title-sec{
