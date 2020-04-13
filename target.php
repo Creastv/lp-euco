@@ -5,12 +5,10 @@ $ipaddress = $_SERVER['REMOTE_ADDR'];
 $date = date('d/m/Y');
 //form data
 $name = $_POST['fName']; 
+$surname = $_POST['fSurname']; 
 $email = $_POST['fEmail']; 
 $phone = $_POST['fPhone']; 
-$oferta = $_POST['oferta[]'];
 $zgodaDan = $_POST['zgodaDane'];
-$zgodaTel = $_POST['zgodaTel'];
-
 
     /*ini_set("SMTP","mail.domain.com"); //mail.yoursite.com should be your local smtp
     ini_set("smtp_port","25"); //25 should be your smtp port
@@ -21,7 +19,7 @@ $zgodaTel = $_POST['zgodaTel'];
                   <body>
                   <head>
                   </head>
-                  <table align='center' style=' background:#f24800; width: 600px;'>
+                  <table align='center' style=' background:#fff; width: 600px;'>
                     <thead>
                       <tr>
                         <td colspan='2' style='border-bottom:1px solid;'>
@@ -31,8 +29,12 @@ $zgodaTel = $_POST['zgodaTel'];
                     </thead>
                     <tbody>
                     <tr>
-                      <td style='border-bottom:1px solid ;' >Imię i nazwisko:</td>
+                      <td style='border-bottom:1px solid ;' >Imię:</td>
                       <td style='border-bottom:1px solid ;'> {$name}</td>      
+                    </tr>
+                    <tr>
+                      <td style='border-bottom:1px solid ;' >Nazwisko:</td>
+                      <td style='border-bottom:1px solid ;'> {$surname}</td>      
                     </tr>
                     <tr>
                       <td style='border-bottom:1px solid ;' >E-mail:</td>
@@ -42,38 +44,23 @@ $zgodaTel = $_POST['zgodaTel'];
                       <td style='border-bottom:1px solid ;' >Nr kontaktowy:</td>
                       <td style='border-bottom:1px solid ;'>{$phone}</td>     
                     </tr>
-                    <tr>
-                    <td style='border-bottom:1px solid ;' >Oferta:</td>
-                    <td style='border-bottom:1px solid ;'>{$oferta}</td>     
-                  </tr>
+                  
                     <tr>
                       <td style='border-bottom:1px solid ;' >Zgoda:</td>
-                      <td style='border-bottom:1px solid ;'>{$zgodaDane}</td>     
-                    </tr>
-                    <tr>
-                      <td style='border-bottom:1px solid ;' >Zgoda:</td>
-                      <td style='border-bottom:1px solid ;'>{$zgodaTel}</td>     
+                      <td style='border-bottom:1px solid ;'>{$zgodaDan}</td>     
                     </tr>
                   </tbody>
-                  <tfoot>
-                   
-                  </tfoot>
+
                   </table>
                    </body>
                   </html>
                   ";
 
 // Send
-mail("biuro@odszkodowanie-powypadkowe.com.pl","Leed złorzony dnia:{$date}",$emailbody,$headers);
+mail("biuro@kapitalizacja-renty.pl","Formularz z dnia:{$date}",$emailbody,$headers);
 // Send
+?>
 
-if (isset($_POST['signup']))
-    {   
-    ?>
 <script type="text/javascript">
 window.location = "thx.html";
 </script>      
-    <?php
-    }
-
-?>

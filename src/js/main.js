@@ -12,7 +12,7 @@ var zgodaInput = document.getElementById('zgodaDane');
 var zgCheck = document.getElementById('zgodaWiecej');
 var nameSurname = /^[a-zA-Z\s]+$/;
 var reEmail = /^\S+@\S+\.\S+$/;
-var rePhone = /^[1-9]\d{8}$/;
+var rePhone = /\d{9}/;
 // name validation
 nameInput.addEventListener('keyup', (event) => {
     if(nameInput.value == "") {
@@ -149,7 +149,7 @@ function validateForm() {
         printError("phoneErr", "Wprowadź swój nr telefonu.");
         phone.style.border = "1px solid red";
     } else {
-        var regex = /^[1-9]\d{8}$/;
+        var regex = /\d{9}/;
         if(regex.test(phone.value) === false) {
             printError("phoneErr", "Wprowadź poprawny nr telefonu.");
             phone.style.border = "1px solid red";
@@ -172,12 +172,5 @@ function validateForm() {
   // Prevent the form from being submitted if there are any errors
   if(( nameErr || surErr || emailErr || phoneErr || zgodaDaneErr ) == true) {
      return false;
-  } else {
-    var dataPreview = "Dane: \n" +
-    "Imię i nazwisko: " + name.value + surname.value + "\n" +
-    "Email: " + email.value + "\n" +
-    "Telefon: " + phone.value + "\n" +
-    "Zgoda: " + zgoda.value + "\n" +
-    alert(dataPreview);
   }
 };
